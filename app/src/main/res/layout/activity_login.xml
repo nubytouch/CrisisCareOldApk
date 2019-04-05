@@ -1,0 +1,121 @@
+<LinearLayout
+    android:id="@+id/layout_login"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dark_white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:hint="@string/identifiant"
+            android:inputType="textEmailAddress"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp"
+            android:textColorHint="@color/dark_white2"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/dark_white"/>
+
+        <com.nubytouch.crisiscare.ui.login.PasswordEditText
+            android:id="@+id/txtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:hint="@string/mot_de_passe"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp"
+            android:maxLength="17"
+            android:inputType="textPassword"
+            android:textColorHint="@color/dark_white2"
+            app:showPasswordIcon="@drawable/ic_eye"
+            app:hidePasswordIcon="@drawable/ic_eye_off"/>
+        <!--<com.marlonmafra.android.widget.EditTextPassword-->
+            <!--android:id="@+id/txtPassword"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/transparent"-->
+            <!--android:hint="@string/mot_de_passe"-->
+            <!--android:inputType="textPassword"-->
+            <!--android:paddingBottom="8dp"-->
+            <!--android:paddingLeft="16dp"-->
+            <!--android:paddingRight="16dp"-->
+            <!--android:paddingTop="8dp"-->
+            <!--android:textColorHint="@color/dark_white2"-->
+            <!--app:showPasswordIcon="@drawable/ic_eye"-->
+            <!--app:hidePasswordIcon="@drawable/ic_eye_off"/>-->
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dark_white"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/login_color"
+            android:gravity="center"
+            android:onClick="onClickLogin"
+            android:text="@string/connexion"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:textSize="@dimen/btTextSize"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/forgot_password_button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/forgot_password"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+</LinearLayout>

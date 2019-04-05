@@ -1,0 +1,7 @@
+<resources>
+
+  <item name="menu_save" type="id" />
+  <item name="menu_validate" type="id"/>
+  <item name="action_send_message" type="id"/>
+    <item name="menu_send" type="id"/>
+</resources>

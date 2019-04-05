@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:id="@+id/label"
+          style="@style/TextAppearance.AppCompat.Body2"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          android:layout_width="match_parent"
+          android:layout_height="48dp"
+          android:paddingLeft="16dp"
+          android:paddingStart="16dp"
+          android:textAllCaps="true"
+          android:gravity="center_vertical"
+          android:textColor="@color/material_black_38"
+          tools:text="Ven. 24 Avril 2017"/>

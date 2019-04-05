@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AlertToggleButton">
+        <attr name="unselectedText" format="string|reference" />
+        <attr name="selectedIcon" format="integer|reference"/>
+    </declare-styleable>
+</resources>

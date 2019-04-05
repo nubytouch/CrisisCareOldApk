@@ -1,0 +1,154 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name">CrisisCare</string>
+    <string name="app_title">Gestion de crise</string>
+
+    <!-- Activation activity -->
+    <string name="input_activation_code">Saisissez le code d\'activation reçu par e-mail</string>
+    <string name="activation_code">Code d\'activation</string>
+    <string name="activate">Activer</string>
+    <string name="please_input_activation_code">Veuillez saisir un code d\'activation</string>
+    <string name="error_activation_code">Votre code d\'activation est incorrect.</string>
+
+    <!-- Login activity -->
+    <string name="connexion">Connexion</string>
+    <string name="mot_de_passe">Clef d\'accès (xxxxx-xxxxx-xxxxx)</string>
+    <string name="identifiant">Adresse E-mail</string>
+    <string name="authentification_en_cours">Authentification en cours</string>
+    <string name="error_please_enter_login">Veuillez saisir votre adresse email SVP</string>
+    <string name="error_please_enter_password">Veuillez saisir votre mot de passe SVP</string>
+    <string name="echec_authentification">Echec de l\'authentification, veuillez vérifier votre
+      identifiant et clef d\'accès.</string>
+    <string name="forgot_password">Identifiants oubliés ?</string>
+
+    <!-- Home activity -->
+    <string name="downloading_data_package">Téléchargement…</string>
+    <string name="version_inconnue">Version inconnue</string>
+    <string name="later">Plus tard</string>
+    <string name="update_now">Mettre à jour</string>
+    <string name="mise_a_jour_disponible">Nouveau contenu disponible</string>
+    <string name="une_nouvelle_version_est_disponible_voulez_vous_la_telecharger_">Du nouveau contenu est à votre disposition, téléchargez-le en cliquant sur le bouton \'Mettre à jour\'</string>
+
+    <!-- Navigation Drawer -->
+    <string name="navigation_drawer_close">Fermer</string>
+    <string name="navigation_drawer_open">Ouvrir</string>
+    <string name="warning_cookies">AVERTISSEMENT\r\nCette application et son contenu sont confidentiels et s\'adressent exclusivement aux collaborateurs. Les personnes ne répondant pas à cette qualité sont priées de ne pas utiliser cette application.</string>
+
+    <!-- Alert Activity -->
+    <string name="status_alerte_new">NOUVEAU</string>
+    <string name="status_alerte_open">OUVERT</string>
+    <string name="status_alerte_inprogress">EN COURS</string>
+    <string name="status_alerte_resolved">RÉSOLU</string>
+    <string name="status_alerte_rejected">REJETÉ</string>
+    <string name="status_alerte_archived">ARCHIVÉ</string>
+
+    <!-- Alert Information Activity -->
+    <string name="contact_author">Contacter l\'alerteur</string>
+    <string name="follow_live">Suivez le Direct</string>
+
+    <!-- Send Alert Activity -->
+    <string name="describe_your_alert">Décrivez l\'alerte</string>
+    <string name="alert_level_low">Faible</string>
+    <string name="alert_level_high">Forte</string>
+    <string name="alert_level_medium">Moyenne</string>
+    <string name="select_alert_level">Impact</string>
+    <string name="add_photo">Ajouter une photo</string>
+    <string name="send">Envoyer</string>
+    <string name="create_new_alert">Créer une nouvelle alerte</string>
+    <string name="alert_sent">Alerte envoyée !</string>
+    <string name="sending_alert">Envoi de l\'alerte en cours ...</string>
+    <string name="unable_to_send_alert">Impossible d\'envoyer l\'alerte</string>
+    <string name="sending_alert_image">Envoi de la photo en cours ...</string>
+    <string name="unable_to_send_alert_image">Impossible d\'envoyer la photo</string>
+    <string name="recipients">Destinataires</string>
+    <string name="alert_standby">Astreinte</string>
+    <plurals name="recipients_desc">
+        <!--<item quantity="zero">Astreinte</item>-->
+        <item quantity="one">Astreinte et %s autre personne</item>
+        <item quantity="other">Astreinte et %s autres personnes</item>
+    </plurals>
+
+    <string name="action_search">Rechercher</string>
+
+    <!-- Document Activity -->
+    <string name="aucun_document">Aucun document</string>
+
+    <!-- Select Deputy Activity -->
+    <string name="suppleants">Suppléants</string>
+    <string name="none">Aucun</string>
+    <string name="unable_to_update_deputies">Impossible de mettre à jour les suppléants</string>
+    <string name="deputy_saved">Suppléants sauvegardés</string>
+    <string name="deputy_removed">Le suppléant a été supprimé</string>
+
+    <!-- Select Site Activity -->
+
+    <!-- Settings Activity -->
+    <string name="parameters">Paramètres</string>
+    <string name="my_account">Mon compte</string>
+    <string name="se_deconnecter">Se déconnecter</string>
+    <string name="etes_vous_sur_de_vouloir_vous_deconnecter_">Êtes-vous sûr de vouloir vous déconnecter ?</string>
+    <string name="name">Nom</string>
+    <string name="e_mail">Email</string>
+    <string name="site">Entité</string>
+
+    <!-- About Activity -->
+    <string name="informations">Informations</string>
+    <string name="mentions_et_credits">Mentions et Crédits</string>
+    <string name="version">Version du contenu</string>
+    <string name="app_version">Version de l\'application</string>
+    <string name="last_update">Dernière mise à jour</string>
+
+    <!-- Contact Information Dialog -->
+    <string name="mobile">Mobile : %s</string>
+    <string name="private_mobile_phone">Mobile (priv) : %s</string>
+    <string name="email">Email : %s</string>
+    <string name="private_email">Email (priv) : %s</string>
+    <string name="phone">Fixe : %s</string>
+    <string name="private_phone">Fixe (priv) : %s</string>
+
+    <!-- Authentification -->
+    <string name="account_disabled">Votre compte est inactif, veuillez contacter le support technique.</string>
+
+    <!-- General -->
+    <string name="oui">Oui</string>
+    <string name="non">Non</string>
+
+    <!--Network connexion-->
+    <string name="votre_connexion_internet_ne_semble_pas_active_">Votre connexion internet ne semble pas active...</string>
+
+    <!-- Location -->
+    <string name="question_enable_gps">La localisation est désactivée, souhaitez-vous l\'activer ?</string>
+
+    <!-- Message -->
+    <string name="recipient">Destinataire</string>
+    <string name="recipients_one">1 Destinataire</string>
+    <string name="recipients_several">%d Destinataires</string>
+    <string name="message_send_error">Erreur lors de l\'envoi du message</string>
+
+    <string name="list">Liste</string>
+    <string name="map">Carte</string>
+    <string name="distance_km">km</string>
+    <string name="distance_m">m</string>
+    <string name="navigation">Itinéraire</string>
+    <string name="no_alert">Aucune alerte</string>
+    <string name="retry">Réessayer</string>
+    <string name="empty">Aucune donnée</string>
+    <string name="time">%1$s:%2$s</string>
+    <string name="new_event">Nouvel événement</string>
+    <string name="description">Description</string>
+    <string name="origin">Origine</string>
+    <string name="follow_handrail">Suivez la main courante</string>
+
+    <string name="camera" tools:override="true">Appareil Photo</string>
+    <string name="gallery" tools:override="true">Galerie</string>
+    <string name="choose_action">Choisir l\'action</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Annuler</string>
+    <string name="groups">Groupes</string>
+    <string name="disclaimer_title"><![CDATA[Mentions & Crédits]]></string>
+    <string name="error_generic">Une erreur est survenue. Merci de réessayer.</string>
+    <string name="action_filter_groups">Inclure les groupes</string>
+    <string name="notification_channel_name">Alertes</string>
+    <string name="alert">Alerte</string>
+
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp_16"
+    android:paddingStart="@dimen/dp_16"
+    android:paddingEnd="@dimen/dp_16">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rules"
+        android:textSize="16sp"
+        android:paddingBottom="@dimen/dp_8"
+        android:textColor="@color/material_black_100"/>
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/view_handrail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="View Handrail" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/edit_handrail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:checked="true"
+        android:text="Edit Handrail" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/submit_checklist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="Submit Checklist" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/forward_document"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="Forward Document" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/create_alerts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="Create Alerts" />
+
+</LinearLayout>

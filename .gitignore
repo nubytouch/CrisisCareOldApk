@@ -1,0 +1,15 @@
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+.idea
+build
+*.zip
+*.apk
+sys$command
+*.iml
+/gradle/wrapper
+gradlew
+gradlew.*
+DexProtector

@@ -1,0 +1,6 @@
+<resources>
+
+    <dimen name="contactRowHeight">60dp</dimen>
+<dimen name="topicRowHeight">60dp</dimen>
+<dimen name="documentRowHeight">60dp</dimen>
+</resources>

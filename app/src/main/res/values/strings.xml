@@ -1,0 +1,150 @@
+<resources>
+
+    <string name="app_name">CrisisCare</string>
+    <string name="app_title">Crisis management</string>
+
+    <!-- Activation Activity -->
+    <string name="input_activation_code">Please enter activation code you received by mail</string>
+    <string name="activation_code">Activation code</string>
+    <string name="activate">Activate</string>
+    <string name="please_input_activation_code">Please enter activation code you received by mail</string>
+    <string name="error_activation_code">Your activation code is incorrect.</string>
+
+    <!-- Login activity -->
+    <string name="connexion">Log in</string>
+    <string name="mot_de_passe">Access key (xxxxx-xxxxx-xxxxx)</string>
+    <string name="identifiant">E-mail address</string>
+    <string name="authentification_en_cours">Authentication in progress</string>
+    <string name="error_please_enter_login">Please enter your email address</string>
+    <string name="error_please_enter_password">Please enter your password</string>
+    <string name="echec_authentification">Your E-mail address and access key are incorrect. Please verify and retry.</string>
+    <string name="forgot_password">Forgot credentials?</string>
+
+    <!-- Home Activity -->
+    <string name="downloading_data_package">Downloading…</string>
+    <string name="version_inconnue">Unknown version</string>
+    <string name="later">Later</string>
+    <string name="update_now">Update</string>
+    <string name="mise_a_jour_disponible">New content available</string>
+    <string name="une_nouvelle_version_est_disponible_voulez_vous_la_telecharger_">New content is available, please tap the \'Update\' button below to download</string>
+
+    <!--Navigation Drawer-->
+    <string name="navigation_drawer_open">open</string>
+    <string name="navigation_drawer_close">close</string>
+    <string name="warning_cookies">This application and its content are confidential and are exclusively addressed to the company employees. Anyone who doesn\'t meet this criteria is asked not to use this application.</string>
+
+    <!--Alert Activity-->
+    <string name="status_alerte_new">NEW</string>
+    <string name="status_alerte_open">OPENED</string>
+    <string name="status_alerte_inprogress">IN PROGRESS</string>
+    <string name="status_alerte_resolved">RESOLVED</string>
+    <string name="status_alerte_rejected">REJECTED</string>
+    <string name="status_alerte_archived">ARCHIVED</string>
+
+    <!-- Alert Information Activity -->
+    <string name="contact_author">Send E-mail to alerter</string>
+    <string name="follow_live">Follow Live feed</string>
+
+    <!--Send Alert Activity-->
+    <string name="describe_your_alert">Describe your alert</string>
+    <string name="alert_level_low">Low</string>
+    <string name="alert_level_high">High</string>
+    <string name="alert_level_medium">Medium</string>
+    <string name="select_alert_level">Select the alert level</string>
+    <string name="add_photo">Add picture</string>
+    <string name="send">Send</string>
+    <string name="create_new_alert">Create a new alert</string>
+    <string name="alert_sent">Alert sent !</string>
+    <string name="sending_alert">Sending alert...</string>
+    <string name="unable_to_send_alert">Unable to send alert</string>
+    <string name="sending_alert_image">Sending photo...</string>
+    <string name="unable_to_send_alert_image">Unable to send photo</string>
+    <string name="recipients">Recipients</string>
+    <string name="alert_standby">Oncall</string>
+    <plurals name="recipients_desc">
+        <item quantity="one">Oncall and another person</item>
+        <item quantity="other">Oncall and %s other people</item>
+    </plurals>
+
+    <!--Document Activity-->
+    <string name="aucun_document">No document</string>
+
+    <!--Contact Activity-->
+    <string name="action_search">Search</string>
+
+    <!-- Select Deputy Activity -->
+    <string name="suppleants">Deputies</string>
+    <string name="none">None</string>
+    <string name="unable_to_update_deputies">Unable to update deputies</string>
+    <string name="deputy_saved">Deputies saved</string>
+
+    <!-- Settings Activity -->
+    <string name="parameters">Parameters</string>
+    <string name="my_account">My account</string>
+    <string name="se_deconnecter">Quit</string>
+    <string name="etes_vous_sur_de_vouloir_vous_deconnecter_">Are you sure you want to disconnect?</string>
+    <string name="name">Name</string>
+    <string name="e_mail">Email</string>
+    <string name="site">Organization</string>
+
+    <!--About Activity-->
+    <string name="informations">Informations</string>
+    <string name="mentions_et_credits">Legal and Credits</string>
+    <string name="version">Content version</string>
+    <string name="app_version">App version</string>
+    <string name="last_update">Last update</string>
+
+    <!-- Contact Information Dialog -->
+    <string name="mobile">Mobile: %s</string>
+    <string name="private_mobile_phone">Mobile (priv): %s</string>
+    <string name="email">Email: %s</string>
+    <string name="private_email">Email (priv): %s</string>
+    <string name="phone">Phone: %s</string>
+    <string name="private_phone">Phone (priv): %s</string>
+
+    <!-- Authentification -->
+    <string name="account_disabled">Your user account is disabled. Please contact technical support.</string>
+
+    <!-- General -->
+    <string name="oui">Yes</string>
+    <string name="non">No</string>
+
+    <!-- Network Connexion -->
+    <string name="votre_connexion_internet_ne_semble_pas_active_">Your internet connection does
+        not seem available...</string>
+
+    <!-- Location -->
+    <string name="question_enable_gps">Your GPS seems to be disabled, do you want to enable it?</string>
+
+    <string name="recipient">Recipient</string>
+    <string name="recipients_one">1 Recipient</string>
+    <string name="recipients_several">%d Recipients</string>
+    <string name="message_send_error">Error sending message</string>
+
+    <string name="deputy_removed">Deputies removed</string>
+    <string name="list">List</string>
+    <string name="map">Map</string>
+    <string name="distance_m">m</string>
+    <string name="distance_km">km</string>
+    <string name="navigation">Navigation</string>
+    <string name="no_alert">No alert</string>
+    <string name="retry">Retry</string>
+    <string name="empty">No data</string>
+    <string name="error_generic">An error has occured. Please retry.</string>
+    <string name="time">%1$s:%2$s</string>
+    <string name="new_event">New event</string>
+    <string name="description">Description</string>
+    <string name="origin">Origin</string>
+    <string name="follow_handrail">Follow Handrail</string>
+    <string name="choose_action">Choose action</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="groups">Groups</string>
+    <string name="disclaimer_title"><![CDATA[Mentions & Crédits]]></string>
+    <string name="action_filter_groups">Include groups</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="notification_channel_name">Alerts</string>
+    <string name="alert">Alert</string>
+
+</resources>

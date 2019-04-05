@@ -1,0 +1,96 @@
+<resources>
+
+    <!--Material colors-->
+    <color name="material_black_100">#FF000000</color>
+    <color name="material_black_87">#DE000000</color>
+    <color name="material_black_54">#8A000000</color>
+    <color name="material_black_50">#80000000</color>
+    <color name="material_black_38">#61000000</color>
+    <color name="material_black_12">#1F000000</color>
+
+    <color name="material_white_100">#FFFFFFFF</color>
+    <color name="material_white_87">#DEFFFFFF</color>
+    <color name="material_white_54">#8AFFFFFF</color>
+    <color name="material_white_50">#80FFFFFF</color>
+    <color name="material_white_38">#61FFFFFF</color>
+    <color name="material_white_12">#1FFFFFFF</color>
+
+    <color name="inactive_dark">#ff9E9E9E</color>
+    <color name="active_dark">#ff757575</color>
+
+    <color name="material_dark_text_primary">@color/material_black_87</color>
+    <color name="material_dark_text_secondary">@color/material_black_54</color>
+    <color name="material_dark_text_disabled">@color/material_black_38</color>
+    <color name="material_dark_text_hint">@color/material_black_38</color>
+    <color name="material_dark_icon_active">@color/material_black_54</color>
+    <color name="material_dark_icon_inactive">@color/material_black_38</color>
+    <color name="material_dark_divider">@color/material_black_12</color>
+
+    <color name="material_light_text_primary">@color/material_white_87</color>
+    <color name="material_light_text_secondary">@color/material_white_54</color>
+    <color name="material_light_text_disabled">@color/material_white_38</color>
+    <color name="material_light_text_hint">@color/material_white_38</color>
+    <color name="material_light_icon_active">@color/material_white_100</color>
+    <color name="material_light_icon_inactive">@color/material_white_50</color>
+    <color name="material_light_divider">@color/material_white_12</color>
+
+    <color name="login_activity_background">#FFF3F3F3</color>
+
+
+
+
+    <color name="main_color">#5C3A70</color>
+    <color name="main_text_color">#5C3A70</color>
+    <color name="activated_color">#5C3A70</color>
+
+    <color name="actionbar_top">#784995</color>
+    <color name="actionbar_bottom">#4B1C69</color>
+    <color name="stroke">#696969</color>
+    <color name="radio_button_selected_color">@color/light_gray</color>
+
+
+    <color name="dark_gray">#253137</color>
+    <color name="light_gray">#808080</color>
+    <color name="light_gray2">#999</color>
+    <color name="light_white">#f7f7f7</color>
+    <color name="dark_white">#e6e6e6</color>
+    <color name="dark_white2">#D3D3D3</color>
+    <color name="red">#FFFF5151</color>
+    <color name="dark_red">#e04849</color>
+    <color name="transparent">#ffffffff</color>
+
+
+    <color name="crisiscare_color">#00e777</color>
+    <color name="important_topic">#FFAA3F</color>
+
+    <color name="login_color">@color/dark_gray</color>
+    <color name="alert_color">#d72b27</color>
+
+    <!-- MuPDF -->
+
+    <color name="canvas">@color/main_color</color>
+    <color name="toolbar">@color/main_color</color>
+    <color name="page_indicator">@color/main_color</color>
+    <color name="busy_indicator">@color/main_color</color>
+    <color name="button_normal">#00000000</color>
+    <color name="button_pressed">@color/light_gray</color>
+    <color name="text_normal">#FFFFFF</color>
+    <color name="text_pressed">#FFFFFF</color>
+    <color name="seek_thumb">#2572AC</color>
+    <color name="seek_progress">#FFFFFF</color>
+    <color name="view_direct">#007AFF</color>
+
+    <!-- ############ -->
+    <!-- Alert Colors -->
+
+    <color name="alert_level_none">#FF92D04F</color>
+    <color name="alert_level_low">#FFFFCF30</color>
+    <color name="alert_level_medium">#FFFF9830</color>
+    <color name="alert_level_high">#FFE62222</color>
+
+    <color name="alert_status_new">#FF999DA3</color>
+    <color name="alert_status_open">#FFE62222 </color>
+    <color name="alert_status_resolved">#FF92D04F</color>
+    <color name="alert_status_rejected">#FF000000 </color>
+    <color name="alert_status_archived">#FF000000</color>
+</resources>

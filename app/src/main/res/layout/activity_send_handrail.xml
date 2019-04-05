@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/material_white_100"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/source_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:baselineAligned="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingStart="16dp"
+        android:paddingRight="16dp"
+        android:paddingEnd="16dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:tint="@color/active_dark"
+            app:srcCompat="@drawable/ic_account_circle"/>
+
+        <EditText
+            android:id="@+id/origin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:background="@null"
+            android:hint="@string/origin"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/material_black_12"/>
+
+    <LinearLayout
+        android:id="@+id/time_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:baselineAligned="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingStart="16dp"
+        android:paddingRight="16dp"
+        android:paddingEnd="16dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:tint="@color/active_dark"
+            app:srcCompat="@drawable/ic_clock2"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Button"
+            android:background="?attr/selectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            tools:text="Ven. 12 April 2017"/>
+
+        <androidx.legacy.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:background="?attr/selectableItemBackground"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            tools:text="10:32"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/material_black_12"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="true"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingStart="16dp"
+        android:paddingRight="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="16dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:tint="@color/active_dark"
+            app:srcCompat="@drawable/ic_note2"/>
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="@string/description"
+            android:paddingTop="2dp"
+            tools:text="Ma super description\nde l'événement\njjgjjj"/>
+    </LinearLayout>
+</LinearLayout>

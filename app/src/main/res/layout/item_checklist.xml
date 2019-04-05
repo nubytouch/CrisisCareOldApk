@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/layout_checklist"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="?attr/selectableItemBackground"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:minHeight="56dp"
+              android:paddingBottom="8dp"
+              android:paddingEnd="8dp"
+              android:paddingLeft="16dp"
+              android:paddingRight="8dp"
+              android:paddingStart="16dp"
+              android:paddingTop="8dp"
+              xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            tools:text="Title"/>
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:gravity="center_vertical"
+            tools:text="Description"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        app:srcCompat="@drawable/ic_action_next_item"/>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/abewy_support_layout_recyclerview_with_swipe_refresh" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_behavior="com.nubytouch.crisiscare.ui.utils.ScrollAwareFABBehavior"
+        app:srcCompat="@drawable/ic_plus"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

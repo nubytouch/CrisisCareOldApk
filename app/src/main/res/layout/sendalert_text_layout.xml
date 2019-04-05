@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:paddingRight="10dp"
+                android:layout_gravity="fill_horizontal|center_vertical"
+                android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/txtAlert"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_toLeftOf="@+id/buttonSendAlert"
+        android:layout_centerVertical="true"
+        android:hint="Saisissez votre alerte"
+        android:textColorHint="#fff"
+        android:textCursorDrawable="@null"
+        android:textColor="#fff"
+        android:layout_height="wrap_content" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:id="@+id/buttonSendAlert"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/ic_action_plane"
+        android:background="@null" />
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_alignLeft="@id/buttonSendAlert"
+        android:layout_alignRight="@id/buttonSendAlert"
+        android:id="@+id/progressSendAlert"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerVertical="true" />
+</RelativeLayout>

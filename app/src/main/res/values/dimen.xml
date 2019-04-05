@@ -1,0 +1,10 @@
+<resources>
+
+    <dimen name="contactRowHeight">40dp</dimen>
+<dimen name="topicRowHeight">56dp</dimen>
+
+    <dimen name="documentRowHeight">60dp</dimen>
+    <dimen name="progressBarHeight">45dp</dimen>
+    <dimen name="btTextSize">17sp</dimen>
+
+</resources>

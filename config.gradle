@@ -1,0 +1,12 @@
+def endpoints = [:]
+    endpoints.MAIN_SERVER = '""'
+    endpoints.NUBY_SERVER = '""'
+    endpoints.AUTH_SERVER = '""'
+    endpoints.AUTH_SERVICE = '""'
+    endpoints.CLIENT_SERVICE = '""'
+    endpoints.AUTH_TOKEN = '""'
+    endpoints.DISCLAIMER_URL = '""'
+    endpoints.CREDITS_URL = '""'
+    endpoints.FORGOTTEN_PWD_PAGE = '""'
+    endpoints.GEO_API_KEY = ''
+ext.endpoints = endpoints

@@ -1,0 +1,263 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFF4"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/my_account"
+                android:textAllCaps="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D1D0D5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFF"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/lblNomPrenom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/name"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/tvNomPrenom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="#666666"
+                    android:textSize="17sp" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:background="#D1D0D5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFF"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/lblEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/e_mail"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/tvEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="#666666"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D1D0D5" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="#D1D0D5" />
+
+            <LinearLayout
+                android:id="@+id/layoutDeputy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFF"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/lblSuppleant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/suppleants"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/tvSuppleant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="#666666"
+                    android:textSize="16sp" />
+
+
+                <ImageView
+                    android:id="@+id/select_deputy_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    app:srcCompat="@drawable/ic_action_next" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D1D0D5" />
+
+            <LinearLayout
+                android:id="@+id/layoutSite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#D1D0D5" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFF"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/lblSite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:gravity="center_vertical"
+                        android:text="@string/site"
+                        android:textColor="#000"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/tvSite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:textColor="#666666"
+                        android:textSize="16sp" />
+
+
+                    <ImageView
+                        android:id="@+id/select_site_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="8dp"
+                        app:srcCompat="@drawable/ic_action_next" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#D1D0D5" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutButtonLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#D1D0D5" />
+
+                <Button
+                    android:id="@+id/btLogout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_flat_selector"
+                    android:gravity="center"
+                    android:onClick="onClickLogout"
+                    android:text="@string/se_deconnecter"
+                    android:textAllCaps="false"
+                    android:textColor="@color/main_text_color"
+                    android:textSize="@dimen/btTextSize" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#D1D0D5" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/button_hidden"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_gravity="bottom"
+                    android:background="?attr/selectableItemBackground" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

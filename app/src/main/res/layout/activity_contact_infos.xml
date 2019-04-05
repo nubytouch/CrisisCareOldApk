@@ -1,0 +1,162 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:background="#fff"
+              android:orientation="vertical"
+              android:padding="4dp">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Mon nom Prenom"
+        android:textColor="@color/main_color"
+        android:textSize="17sp"
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/main_color"/>
+
+    <Button
+        android:id="@+id/btMobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_action_next_item"
+        />
+
+    <LinearLayout
+        android:id="@+id/actionMobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="2">
+
+        <ImageButton
+            android:id="@+id/dialMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_action_call"/>
+
+        <ImageButton
+            android:id="@+id/smsMobile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_message_text"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_action_next_item"
+        />
+
+    <LinearLayout
+        android:id="@+id/actionPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="2">
+
+        <ImageButton
+            android:id="@+id/dialPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_action_call"/>
+
+        <ImageButton
+            android:id="@+id/smsPhone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_message_text"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btMail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="E-mail"/>
+
+    <Button
+        android:id="@+id/btPrivateMobilePhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_action_next_item"
+        />
+
+    <LinearLayout
+        android:id="@+id/actionPrivateMobilePhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="2">
+
+        <ImageButton
+            android:id="@+id/dialPrivateMobilePhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_action_call"/>
+
+        <ImageButton
+            android:id="@+id/smsPrivateMobilePhone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_message_text"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btPrivatePhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_action_next_item"
+        />
+
+    <LinearLayout
+        android:id="@+id/actionPrivatePhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="2">
+
+        <ImageButton
+            android:id="@+id/dialPrivatePhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_action_call"/>
+
+        <ImageButton
+            android:id="@+id/smsPrivatePhone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_message_text"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btPrivateMail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="E-mail"/>
+
+</LinearLayout>

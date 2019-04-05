@@ -1,0 +1,139 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        jcenter()
+        maven { url 'https://maven.fabric.io/public' }
+        maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.26.1'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+apply from: '../config.gradle'
+
+repositories {
+    maven { url "https://jitpack.io" }
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.2'
+    dexOptions {
+        maxProcessCount 2
+        javaMaxHeapSize "4g"
+    }
+    defaultConfig {
+        applicationId "crisiscare.nubytouch.com.crisiscareapplication"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 45
+        versionName "5.3.181213" // Majeur.Trimestre(0..3).Date(yymmdd)
+        multiDexEnabled true
+
+        vectorDrawables.useSupportLibrary true
+
+        manifestPlaceholders = [geoApiKey:endpoints.GEO_API_KEY]
+    }
+
+    buildTypes {
+        debug {
+            aaptOptions.cruncherEnabled = false
+            ext.alwaysUpdateBuildId = false
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    flavorDimensions "dimension"
+
+    productFlavors {
+        regular {
+            buildConfigField 'Boolean', 'DEMO', 'false'
+            it.buildConfigField 'String', 'MAIN_SERVER', endpoints.MAIN_SERVER
+            it.buildConfigField 'String', 'NUBY_SERVER', endpoints.NUBY_SERVER
+            it.buildConfigField 'String', 'AUTH_SERVER', endpoints.AUTH_SERVER
+            it.buildConfigField 'String', 'AUTH_SERVICE', endpoints.AUTH_SERVICE
+            it.buildConfigField 'String', 'CLIENT_SERVICE', endpoints.CLIENT_SERVICE
+            it.buildConfigField 'String', 'AUTH_TOKEN', endpoints.AUTH_TOKEN
+            it.buildConfigField 'String', 'DISCLAIMER_URL', endpoints.DISCLAIMER_URL
+            it.buildConfigField 'String', 'CREDITS_URL', endpoints.CREDITS_URL
+            it.buildConfigField 'String', 'FORGOTTEN_PWD_PAGE', endpoints.FORGOTTEN_PWD_PAGE
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        def requested = details.requested
+        if (requested.group == "com.android.support") {
+            if (!requested.name.startsWith("multidex")) {
+                details.useVersion "26.+"
+            }
+        }
+    }
+}
+
+
+dependencies {
+    ext {
+        PLAY_SERVICES = '15.0.1';
+        SUPPORT_LIB = '28.0.0-rc02';
+        RETROFIT = '2.0.0';
+        PICASSO = '2.5.2';
+        DB_FLOW = '3.0.1';
+        ANDROIDX = '1.0.0'
+    }
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "androidx.appcompat:appcompat:${ANDROIDX}"
+    implementation "androidx.legacy:legacy-support-v4:${ANDROIDX}"
+    implementation "com.google.android.material:material:${ANDROIDX}"
+    implementation "androidx.cardview:cardview:${ANDROIDX}"
+    implementation "androidx.percentlayout:percentlayout:${ANDROIDX}"
+    implementation "androidx.browser:browser:${ANDROIDX}"
+    implementation 'androidx.multidex:multidex:2.0.0'
+    implementation "com.google.android.gms:play-services-gcm:${PLAY_SERVICES}"
+    implementation "com.google.android.gms:play-services-maps:${PLAY_SERVICES}"
+    implementation "com.google.android.gms:play-services-location:${PLAY_SERVICES}"
+    implementation "com.squareup.retrofit2:retrofit:${RETROFIT}"
+    implementation "com.squareup.retrofit2:converter-gson:${RETROFIT}"
+    implementation "com.squareup.retrofit2:converter-scalars:${RETROFIT}"
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.0.1'
+    implementation "com.squareup.picasso:picasso:${PICASSO}"
+    implementation 'com.makeramen:roundedimageview:2.2.1'
+    implementation 'com.novoda:merlin:1.0.0'
+    implementation 'org.apache.commons:commons-lang3:3.4'
+    implementation 'commons-io:commons-io:2.5'
+    implementation 'com.birbit:android-priority-jobqueue:2.0.1'
+    implementation 'com.squareup:otto:1.3.8'
+    implementation 'com.google.dagger:dagger:2.0.2'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.0.2'
+    implementation 'org.osmdroid:osmdroid-android:5.0.1@aar'
+    implementation 'com.miguelcatalan:materialsearchview:1.4.0'
+    implementation 'com.jakewharton.timber:timber:4.5.1'
+    implementation 'uk.co.chrisjenx:calligraphy:2.3.0'
+    implementation project(':muPDFViewer')
+    implementation 'com.marlonmafra.android.widget:edittext-password:1.0.0'
+    implementation 'com.github.jrvansuita:PickImage:2.1.6'
+    implementation 'com.thoughtbot:expandablerecyclerview:1.3'
+
+    // Check for v11.4.2 or higher
+    implementation 'com.google.firebase:firebase-core:16.0.6'
+
+    // Add dependency
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.9.7'
+}
+
+apply plugin: "com.google.gms.google-services"

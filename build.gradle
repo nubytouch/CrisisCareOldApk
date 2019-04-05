@@ -1,0 +1,43 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        //flatDir { dirs './DexProtector' }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.3.1'
+        classpath 'com.google.gms:google-services:3.2.1'
+        //classpath ':dexprotector-gradle-plugin:'
+        //classpath ':dexprotector:'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+    }
+
+    tasks.whenTaskAdded { task ->
+        if (task.name.contains("lint")) {
+            task.enabled = false
+        }
+    }
+
+    tasks.whenTaskAdded { task ->
+        if (task.name.equals("lint")) {
+            task.enabled = false
+        }
+    }
+
+    tasks.whenTaskAdded { task ->
+        if (task.name.equals("lintVitalRelease")) {
+            task.enabled = false
+        }
+    }
+}

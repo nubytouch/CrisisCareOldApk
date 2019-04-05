@@ -1,0 +1,145 @@
+<resources>
+
+    <string name="app_name">CrisisCare</string>
+    <string name="app_title">Gestión de crisis</string>
+
+    <!-- Activation activity -->
+    <string name="input_activation_code">Introduzca el código de activación que recibió por correo</string>
+    <string name="activation_code">Código de activación</string>
+    <string name="activate">Activar</string>
+    <string name="please_input_activation_code">Introduzca el código de activación que recibió por correo</string>
+    <string name="error_activation_code">Su código de activación es incorrecto.</string>
+
+    <!-- Login activity -->
+    <string name="connexion">Iniciar sesión</string>
+    <string name="mot_de_passe">Clave de acceso (xxxxx-xxxxx-xxxxx)</string>
+    <string name="identifiant">Dirección de correo electrónico</string>
+    <string name="authentification_en_cours">Authentication in progress</string>
+    <string name="error_please_enter_login">Please enter your email address</string>
+    <string name="error_please_enter_password">Please enter your password</string>
+    <string name="echec_authentification">Su dirección de correo electrónico y clave de acceso son incorrectos. Compruebe la información e inténtelo de nuevo.</string>
+    <string name="forgot_password">Forgot credentials?</string>
+
+    <!-- Home activity -->
+    <string name="downloading_data_package">Descargando…</string>
+    <string name="version_inconnue">Unknown version</string>
+    <string name="later">Más tarde</string>
+    <string name="update_now">Actualizar</string>
+    <string name="mise_a_jour_disponible">New content available</string>
+    <string name="une_nouvelle_version_est_disponible_voulez_vous_la_telecharger_">Hay nuevo contenido disponible; pulse el botón “Actualizar” que aparece a continuación para descargarlo</string>
+
+    <!-- Navigation Drawer -->
+    <string name="navigation_drawer_close">Cerrar</string>
+    <string name="navigation_drawer_open">Abrir</string>
+    <string name="warning_cookies">Esta aplicación y su contenido son confidenciales y están dirigidos exclusivamente a los empleados de la empresa. Se ruega a todo aquel que no cumpla estos criterios que no utilice esta aplicación.</string>
+
+    <!-- Alert Activity -->
+    <string name="status_alerte_new">NUEVO</string>
+    <string name="status_alerte_open">ABRIR</string>
+    <string name="status_alerte_inprogress">EN CURSO</string>
+    <string name="status_alerte_resolved">RESUELTO</string>
+    <string name="status_alerte_rejected">ARCHIVADO</string>
+    <string name="status_alerte_archived">RECHAZADO</string>
+
+    <!-- Alert Information Activity -->
+    <string name="contact_author">Alerta de contacto</string>
+    <string name="follow_live">Seguir transmisión en vivo</string>
+
+    <!-- Send Alert Activity -->
+    <string name="describe_your_alert">Describa su alerta</string>
+    <string name="alert_level_low">Bajo</string>
+    <string name="alert_level_high">Alto</string>
+    <string name="alert_level_medium">Medio</string>
+    <string name="select_alert_level">Seleccione el nivel de alerta</string>
+    <string name="add_photo">Añadir foto</string>
+    <string name="send">Enviar</string>
+    <string name="create_new_alert">Crear una nueva alerta</string>
+    <string name="alert_sent">¡Alerta enviada!</string>
+    <string name="sending_alert">El envío de alerta ...</string>
+    <string name="unable_to_send_alert">No se puede enviar la alerta</string>
+    <string name="sending_alert_image">El envío de fotos...</string>
+    <string name="unable_to_send_alert_image">No se puede enviar la foto</string>
+    <string name="recipients">destinatarios</string>
+    <string name="alert_standby">Guardia</string>
+    <plurals name="recipients_desc">
+        <!--<item quantity="zero">Astreinte</item>-->
+        <item quantity="one">guardia y otra persona</item>
+        <item quantity="other">guardia y otros %s</item>
+    </plurals>
+
+    <!-- Contact Activity -->
+    <string name="action_search">Buscar</string>
+
+    <!-- Document Activity -->
+    <string name="aucun_document">ningún documento</string>
+
+    <!-- Select Deputy Activity -->
+    <string name="suppleants">Suplentes</string>
+    <string name="none">Ninguna</string>
+    <string name="unable_to_update_deputies">No se puede actualizar</string>
+    <string name="deputy_saved">guardado</string>
+    <string name="deputy_removed">eliminado</string>
+
+    <!-- Settings Activity -->
+    <string name="parameters">Parámetros</string>
+    <string name="my_account">Mi cuenta</string>
+    <string name="se_deconnecter">Quit</string>
+    <string name="etes_vous_sur_de_vouloir_vous_deconnecter_">¿Seguro que desea desconectar?</string>
+    <string name="name">Nombre</string>
+    <string name="e_mail">Correo electrónico</string>
+    <string name="site">Organización</string>
+
+    <!-- About Activity -->
+    <string name="informations">Información</string>
+    <string name="mentions_et_credits">Aviso legal y créditos</string>
+    <string name="version">Versión</string>
+    <string name="app_version">Versión de la aplicación</string>
+    <string name="last_update">Última actualización</string>
+
+    <!-- Contact Information Dialog -->
+    <string name="mobile">Móvil: %s</string>
+    <string name="private_mobile_phone">Móvil (priv): %s</string>
+    <string name="email">correo electrónico: %s</string>
+    <string name="private_email">correo electrónico (priv): %s</string>
+    <string name="phone">Teléfono: %s</string>
+    <string name="private_phone">Teléfono (priv): %s</string>
+
+    <!-- Authentification -->
+    <string name="account_disabled">Su cuenta de usuario se ha deshabilitado. Póngase en contacto con el soporte técnico.</string>
+
+    <!-- General -->
+    <string name="oui">Sí</string>
+    <string name="non">No</string>
+
+    <!--Network connexion-->
+    <string name="votre_connexion_internet_ne_semble_pas_active_">No se puede conectar. Compruebe su red Wi-Fi o móvil.</string>
+
+    <!-- Location -->
+    <string name="question_enable_gps">Your GPS seems to be disabled, do you want to enable it?</string>
+
+    <!-- Message -->
+    <string name="recipient">Recipient</string>
+    <string name="recipients_one">1 Recipient</string>
+    <string name="recipients_several">%d Recipients</string>
+    <string name="message_send_error">Error sending message</string>
+    <string name="list">List</string>
+    <string name="map">Map</string>
+    <string name="distance_m">m</string>
+    <string name="distance_km">km</string>
+    <string name="navigation">Navigation</string>
+    <string name="no_alert">No alert</string>
+    <string name="retry">Retry</string>
+    <string name="empty">No data</string>
+    <string name="time">%1$s:%2$s</string>
+    <string name="new_event">New event</string>
+    <string name="description">Description</string>
+    <string name="origin">Origin</string>
+    <string name="follow_handrail">Follow Handrail</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="groups">Groups</string>
+    <string name="error_generic">An error has occured. Please retry.</string>
+    <string name="action_filter_groups">Include groups</string>
+    <string name="notification_channel_name">Alerts</string>
+    <string name="alert">Alert</string>
+</resources>

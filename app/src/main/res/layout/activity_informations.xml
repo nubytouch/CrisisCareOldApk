@@ -1,0 +1,167 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFF4"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="VERSION" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D1D0D5" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="#FFF"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblVersion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:text="@string/version"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="left|center_vertical"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tvVersion"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text=""
+                    android:textSize="17sp"
+                    android:textColor="#666666" />
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:background="#D1D0D5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="#FFF"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblAppVersion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:text="@string/app_version"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="left|center_vertical"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tvAppVersion"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text=""
+                    android:textSize="17sp"
+                    android:textColor="#666666" />
+
+
+            </LinearLayout>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:background="#D1D0D5" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="#FFF"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:text="@string/last_update"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="left|center_vertical"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text=""
+                    android:textSize="17sp"
+                    android:textColor="#666666" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D1D0D5" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="40dp"
+                android:background="#D1D0D5" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_flat_selector"
+                android:onClick="onClickCredits"
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:text="@string/mentions_et_credits"
+                android:textAllCaps="false" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D1D0D5" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
