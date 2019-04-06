@@ -1,12 +1,12 @@
 # CrisisCareOldApk
-old apk source code
 
-This is the code source for the old CrisisCare Android application
+CrisisCare Android APK. This is the code source for the old CrisisCare Android application : version 5.3.181130, released on December 2018 
+we develop this application for Nubytouch, the APK is free of use a new version without mupdf-android-viewer-old code is available on the play store
 
 LICENSE
 =======
 
-CrisisCare is Copyright 2017 by Nubytouch we develop this application for Nubytouch the APK is free of use a new version without mupdf-android-viewer-old code is available on https://play.google.com/store/apps/details?id=crisiscare.nubytouch.com.crisiscareapplication
+CrisisCare Android application : version 5.3.181130, released on December 2018 is Copyright 2018 by Nubytouch 
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
@@ -19,4 +19,4 @@ For commercial licensing, including our code, please contact : contact@nubytouc
 This code include some code from ARTIFEX software
 https://github.com/ArtifexSoftware/mupdf-android-viewer-old you cannot use ArtifexSoftware for commercial purpose see https://github.com/ArtifexSoftware/mupdf-android-viewer-old/blob/master/ReadMe.txt
 
-Good luck!
+
